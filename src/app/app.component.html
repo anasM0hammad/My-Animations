@@ -2,12 +2,20 @@
   <h1> My Animations</h1><br>
   <div class="row">
     <div class="col-sm-12">
-      <button class="mybtn ">Shrink !</button>
+      <button class="mybtn " (click)="onShrink()">Shrink !</button>
       <button class="mybtn " (click)="onAnimate()">Animate !</button>
     </div>
   </div>
   <br><hr>
-   <div class="animatedDiv" [@divState]="state"></div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="animatedDiv" [@divState]="state"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="animatedDiv" [@divState]="wildState"></div>
+    </div>
+  </div>
+   
   <br>
   <div class="row">
     <div class="col-sm-12">
