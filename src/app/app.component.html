@@ -33,7 +33,7 @@
         <div class="col-sm-8">
           <p><b>Click to Delete an Item</b></p>
           <ul class="list-group">
-            <li class="list-group-item" *ngFor="let text of allText; let i=index" (click)="onDelete(i)">{{text}}</li>
+            <li class="list-group-item" *ngFor="let text of allText; let i=index" (click)="onDelete(i)" [@list1]>{{text}}</li>
           </ul>
         </div>
       </div>
