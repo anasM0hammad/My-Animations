@@ -28,7 +28,13 @@ import { trigger , state , style , transition , animate } from '@angular/animati
 
        transition('normal => highlighted' , animate(300)),
        transition('highlighted => normal' , animate(600)),
-       transition('shrunk <=> *' , animate(700))
+       transition('shrunk <=> *' ,[
+          
+          style({backgroundColor: 'orange'}),
+          animate(1000 , style({ transform: 'translateY(50px)'})),
+          animate(600)
+           
+       	])
  
      ])
   ]
