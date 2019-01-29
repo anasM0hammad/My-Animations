@@ -18,6 +18,14 @@
           <button class="btn btn-primary" (click)="onAdd()">Add Text</button>
         </div>
       </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-8">
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let text of allText">{{text}}</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
