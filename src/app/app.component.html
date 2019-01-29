@@ -3,10 +3,12 @@
   <div class="row">
     <div class="col-sm-12">
       <button class="mybtn ">Shrink !</button>
-      <button class="mybtn ">Animate !</button>
+      <button class="mybtn " (click)="onAnimate()">Animate !</button>
     </div>
   </div>
-  <br><hr><br>
+  <br><hr>
+   <div class="animatedDiv" [@divState]="state"></div>
+  <br>
   <div class="row">
     <div class="col-sm-12">
       <label><b>Enter Text</b></label>
