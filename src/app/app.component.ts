@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , ViewChild , ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'myAnimations';
+  
+  allText: string[] = ['Anas' , 'Saad'] ;
+  @ViewChild('input') text: ElementRef ;
+
+
+  onAdd(){
+     const text = this.text.nativeElement.value ;
+     this.allText.push(text) ;
+     console.log(this.allText); 
+  }
+
 }

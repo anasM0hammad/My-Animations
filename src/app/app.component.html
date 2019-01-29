@@ -1,9 +1,23 @@
 <div class="container">
-  <h1 class="display-4"> My Animations</h1><br>
+  <h1> My Animations</h1><br>
   <div class="row">
     <div class="col-sm-12">
-      <button class="btn ">Shrink !</button>
-      <button class="btn ">Animate !</button>
+      <button class="mybtn ">Shrink !</button>
+      <button class="mybtn ">Animate !</button>
+    </div>
+  </div>
+  <br><hr><br>
+  <div class="row">
+    <div class="col-sm-12">
+      <label><b>Enter Text</b></label>
+      <div class="row">
+        <div class="col-sm-8">
+           <input type="text" class="form-control" #input>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" (click)="onAdd()">Add Text</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
