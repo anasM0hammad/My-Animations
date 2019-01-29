@@ -1,0 +1,30 @@
+*{
+	font-family: "comic sans ms";
+}
+
+.container{
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 21px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 10px;
+}
+
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
