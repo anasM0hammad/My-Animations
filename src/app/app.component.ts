@@ -9,12 +9,21 @@ export class AppComponent {
   
   allText: string[] = ['Anas' , 'Saad'] ;
   @ViewChild('input') text: ElementRef ;
+  
+
+   onDelete(index: number){
+     this.allText.splice(index, 1);
+  }
 
 
   onAdd(){
      const text = this.text.nativeElement.value ;
-     this.allText.push(text) ;
-     console.log(this.allText); 
+      if(text){
+	     this.allText.push(text) ;
+	     this.text.nativeElement.value = '';
+	 }
   }
+
+ 
 
 }

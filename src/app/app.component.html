@@ -21,8 +21,9 @@
       <br>
       <div class="row">
         <div class="col-sm-8">
+          <p><b>Click to Delete an Item</b></p>
           <ul class="list-group">
-            <li class="list-group-item" *ngFor="let text of allText">{{text}}</li>
+            <li class="list-group-item" *ngFor="let text of allText; let i=index" (click)="onDelete(i)">{{text}}</li>
           </ul>
         </div>
       </div>
